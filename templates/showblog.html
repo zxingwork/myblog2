@@ -1,0 +1,13 @@
+{%extends "base.html"%}\
+
+{%block body%}
+<body>
+<div id="content">{{text}}</div>
+{%if text%}
+<script>
+    document.getElementById('content').innerHTML=
+        marked(document.getElementById('content').textContent)
+</script>
+{%endif%}
+</body>
+{%endblock%}

@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block body%}
+<p>
+    <h3>
+    {%if error%}
+    {{error}}{%endif%}
+</h3>
+</p>
+<form method="post">
+    <dl>
+        <dt>username:</dt>
+        <dd><input type="text" name="username" placeholder="enter your name"></dd>
+
+        <dt>password:</dt>
+        <dd><input type="password" name="password" placeholder="enter your password"></dd>
+    </dl>
+    <input type="submit" value="sign in">
+</form>
+
+{%endblock%}
